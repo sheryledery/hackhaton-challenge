@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="drums.css">
+</head>
+<body>
+    <h1>Drums game</h1>
+    <div class="alert">
+        <span class="closebtn">&times;</span>  
+        <h1>The Game start in 
+            <span id="countdown">10</span>
+            seconds!
+        </h1>
+      </div>
+      
+       
+    </div>
+    
+  <script>
+  // Step 1. What element do we want to animate?
+  var countdown = document.getElementById("countdown");
+  // Step 2. What function will change it each time?
+  var countItDown = function() {
+    var currentTime = parseFloat(countdown.textContent);
+    if (currentTime > 0) {
+       countdown.textContent = currentTime - 1;   
+    } else {
+        window.clearInterval(timer);
+    }
+    
+  };
+  // Step 3: Call that on an interval
+  var timer = window.setInterval(countItDown, 1000);var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+
+
+    </script>
+</body>
+</html>
