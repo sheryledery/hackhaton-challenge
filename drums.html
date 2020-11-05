@@ -7,44 +7,57 @@
     <link rel="stylesheet" type="text/css" href="drums.css">
 </head>
 <body>
-    <h1>Drums game</h1>
+
+  <div class= "wrap">
+
+
+    <h1 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">Drums Game</span>
+      </span>
+    </h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
     <div class="alert">
         <span class="closebtn">&times;</span>  
         <h1>The Game start in 
             <span id="countdown">10</span>
             seconds!
         </h1>
-      </div>
-      
-       
     </div>
-    
-  <script>
-  // Step 1. What element do we want to animate?
-  var countdown = document.getElementById("countdown");
-  // Step 2. What function will change it each time?
-  var countItDown = function() {
-    var currentTime = parseFloat(countdown.textContent);
-    if (currentTime > 0) {
-       countdown.textContent = currentTime - 1;   
-    } else {
-        window.clearInterval(timer);
-    }
-    
-  };
-  // Step 3: Call that on an interval
-  var timer = window.setInterval(countItDown, 1000);var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function(){
-    var div = this.parentElement;
-    div.style.opacity = "0";
-    setTimeout(function(){ div.style.display = "none"; }, 600);
-  }
-}
 
 
-    </script>
+<div class="animals">
+    <input type="button"  class="audio10" id="play-10" onclick="play(event)" > <br>
+    <audio id="audio10" src="sounds/bird.mp3"></audio>
+
+     <input type="button"  class="audio1" id="play-1" onclick="play(event)" ><br>
+    <audio id="audio1" src="sounds/cow.mp3"></audio>
+
+    <input type="button"  class="audio2" id="play-2" onclick="play(event)"><br>
+    <audio id="audio2" src="sounds/dog.mp3"></audio>
+
+    <input type="button"  class="audio3"  id="play-3" onclick="play(event)"><br>
+    <audio id="audio3" src="sounds/cat.mp3"></audio>
+
+    <input type="button"  class="audio4" id="play-4" onclick="play(event)"><br>
+    <audio id="audio4" src="sounds/duck.mp3"></audio>
+
+    <input type="button"  class="audio5" id="play-5" onclick="play(event)"><br>
+    <audio id="audio5" src="sounds/pony.mp3"></audio>
+
+    <input type="button"  class="audio6" id="play-6" onclick="play(event)"><br>
+    <audio id="audio6" src="sounds/bee.mp3"></audio>
+
+    <input type="button"  class="audio7"  id="play-7" onclick="play(event)"><br>
+    <audio id="audio7" src="sounds/sheep.mp3"></audio>
+
+    <input type="button" class="audio8" id="play-8" onclick="play(event)"><br>
+    <audio id="audio8" src="sounds/elefant.mp3"></audio>
+    </div>
+  <script src="drums.js">
+ 
+</script>
+   
 </body>
 </html>

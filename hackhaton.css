@@ -19,10 +19,137 @@
     transform: translateY(4px);
   }
 
-  #img{
-    background-image: url(img1.jpeg);
+body {
+    background-image: url("./img1.jpeg");
+    background-size: cover;
     background-repeat: no-repeat, repeat;
     background-blend-mode: multiply;
-
+    background-attachment: fixed;
+    background-position: center;
   
     }
+    .header{
+     background-image: url(“appkids.jpeg”); 
+      height: 40vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center
+  }
+  .cover {
+    color: white;
+    font-size: 5vh;
+    font-family: sans-serif;
+  }
+
+  .submit{
+    background-color: lightblue;
+
+  }
+
+.input-group-text{
+  background-color: lightblue;
+}
+
+
+.input{
+height: 20px;
+width: 20px;
+
+}
+
+
+.button{
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+h1{
+  font-family: chalkduster;
+  text-align: center;
+  justify-content: center;
+}
+
+  /* DOMination animated font style */
+
+  .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+  p{
+color: blue;
+font-family: chalkduster;
+font-size: 39px;
+text-align: center;
+margin-top: 50px;
+position: relative;
+
+  }
+
+  .button:hover
+{
+ -webkit-transform: scale(0.8);
+ -ms-transform: scale(0.8);
+ transform: scale(0.8);
+ -webkit-transition: all 1s ease-in-out;
+ transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+#button1{
+  background-image: url("buttonshapes.png");
+  border: 50% solid orange;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+}
+
+#button2{
+  background-image: url("buttonimg.png");
+  border: 50% solid orange;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  
+}
+
+h3{
+  color: black;
+  font-family: chalkduster;
+  font-size: 150px;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons{
+  margin: auto;
+  padding: 30pxpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
