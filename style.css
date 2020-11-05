@@ -9,11 +9,13 @@ body{
  	font-family: chalkduster;
  }
 
-.m16 {
+
+.ml6 {
   position: relative;
   font-weight: 900;
-  font-size: 5.5em;
+  font-size: 3.3em;
 }
+
 .ml6 .text-wrapper {
   position: relative;
   display: inline-block;
@@ -22,6 +24,7 @@ body{
   padding-bottom: 0.1em;
   overflow: hidden;
 }
+
 .ml6 .letter {
   display: inline-block;
   line-height: 1em;
@@ -83,14 +86,6 @@ body{
 	width: 125px;
 	margin-top: 5px;
 }
-/*#triangleDown{
-	width: 0;
-	height: 0;
-	border-top: 50px solid blue;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	margin-top: 5px;
-}*/
 
 #circle{
 	height: 70px;
@@ -143,14 +138,6 @@ body{
 
 }
 
-/*#triangleDown1{
-	width: 0;
-	height: 0;
-	border-left: 75px  solid transparent;
-	border-right: 75px solid transparent;
-	border-top: 50px dashed white;
-	margin-top: 5px;
-}*/
 
 #oval1 {
   height: 80px;
@@ -170,5 +157,34 @@ body{
 	border-style: dashed;
 	
 }
+h3{
+	letter-spacing: 5px;
+ 	font-family: chalkduster;
+}
+.button {
+  justify-content: center;
+  padding: 15px 25px;
+  font-size: 24px;
+  font-family: chalkduster;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
+.button:hover {background-color: #3e8e41}
 
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+}

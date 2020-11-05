@@ -2,16 +2,41 @@
 <html>
 <head>
     <title>Shape Sorter</title>
-    <link rel="stylesheet" type="text/css" href="/Users/annabuckles/Library/Application Support/Sublime Text 3/Packages/User/style.css">
+    <link rel="stylesheet" type="text/css" href="/Users/annabuckles/Desktop/Hackathon/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <style>
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style> -->
+</head>
 </head>
 <body>
+    <iframe src="music.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <div>
          <h1 class="ml6">
   <span class="text-wrapper">
-  <span class="letters">SHAPE SORTER</span>
+    <span class="letters">CAN YOU MATCH THE SHAPES?</span>
   </span>
 </h1>
-<iframe src="music.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     </div>      
         <div class=container2>
@@ -58,9 +83,11 @@
             ondragstart="dragStart(event)"
             ondragover="allowDrop(event)"
             ondragleave="allowLeave(event)"></div>
-        </div> 
-
-    
-<script src="script.js"></script>
+        </div><hr>
+        <div class= footer>
+            <h3>All Done?</h3><br>
+            <button onclick="hackhaton.html" class="button" >GO BACK</button>
+        </div>    
+<script src="/Users/annabuckles/Desktop/Hackathon/script.js"></script>
 </body>
 </html>
