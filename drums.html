@@ -11,17 +11,20 @@
   <div class= "wrap">
 
 
-    <h1 class="ml6">
-      <span class="text-wrapper">
-        <span class="letters">Drums Game</span>
-      </span>
-    </h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+      
+      <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">Drums Game</span>
+        </span>
+      </h1>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 
     <div class="alert">
         <span class="closebtn">&times;</span>  
         <h1>The Game start in 
-            <span id="countdown">10</span>
+            <span id="countdown">5</span>
             seconds!
         </h1>
     </div>
@@ -54,10 +57,133 @@
 
     <input type="button" class="audio8" id="play-8" onclick="play(event)"><br>
     <audio id="audio8" src="sounds/elefant.mp3"></audio>
-    </div>
-  <script src="drums.js">
- 
-</script>
+    </div><br><br>
+
+    
+<!-- QUIZZ -->
+<div class="questions">
+
+    <br><form name="quest"></form>
+
+<!-- questions  -->
+
+<p>Which animal live in the farm ?
+  <br><input type="radio" name="1" value="a" onclick="Engine(1, this.value)"><font color="#FF0000">a.
+  </font><font color="#330033">Lion</font>
+  <br><input type="radio" name="1" value="b" onclick="Engine(1, this.value)"><font color="#FF0000">b.
+  </font><font color="#330033">Cow</font>
+  <br><input type="radio" name="1" value="c" onclick="Engine(1, this.value)"><font color="#FF0000">c.
+  </font><font color="#330033">Elephant</font>
+  <br><input type="radio" name="1" value="d" onclick="Engine(1, this.value)"><font color="#FF0000">c.
+  </font><font color="#330033">Zebra</font>
+  <br>&nbsp;
+
+  <p>What does the pony eat ?
+    <br><input type="radio" name="2" value="a" onclick="Engine(2, this.value)"><font color="#FF0000">a.
+    </font><font color="#330033">Milk</font>
+    <br><input type="radio" name="2" value="b" onclick="Engine(2, this.value)"><font color="#FF0000">b.
+    </font><font color="#330033">Grass</font>
+    <br><input type="radio" name="2" value="c" onclick="Engine(2, this.value)"><font color="#FF0000">c.
+    </font><font color="#330033">Chocolate</font>
+    <br><input type="radio" name="2" value="d" onclick="Engine(2, this.value)"><font color="#FF0000">c.
+    </font><font color="#330033">Cakes</font>
+    <br>&nbsp;
+
+    <p>How many legs do Elephant have ?
+      <br><input type="radio" name="3" value="a" onclick="Engine(3, this.value)"><font color="#FF0000">a.
+      </font><font color="#330033">3</font>
+      <br><input type="radio" name="3" value="b" onclick="Engine(3, this.value)"><font color="#FF0000">b.
+      </font><font color="#330033">8</font>
+      <br><input type="radio" name="3" value="c" onclick="Engine(3, this.value)"><font color="#FF0000">c.
+      </font><font color="#330033">4</font>
+      <br><input type="radio" name="3" value="d" onclick="Engine(3, this.value)"><font color="#FF0000">c.
+      </font><font color="#330033">5</font>
+      <br>&nbsp;
+
+      <p>Which animal does not fly ?
+        <br><input type="radio" name="4" value="a" onclick="Engine(4, this.value)"><font color="#FF0000">a.
+        </font><font color="#330033">Bird</font>
+        <br><input type="radio" name="4" value="b" onclick="Engine(4, this.value)"><font color="#FF0000">b.
+        </font><font color="#330033">Eagle</font>
+        <br><input type="radio" name="4" value="c" onclick="Engine(4, this.value)"><font color="#FF0000">c.
+        </font><font color="#330033">Turtle</font>
+        <br><input type="radio" name="4" value="d" onclick="Engine(4, this.value)"><font color="#FF0000">c.
+        </font><font color="#330033">Bee</font>
+        <br>&nbsp;
+
+        <p>Which animal is the biggest ?
+          <br><input type="radio" name="5" value="a" onclick="Engine(5, this.value)"><font color="#FF0000">a.
+          </font><font color="#330033">Butterfly</font>
+          <br><input type="radio" name="5" value="b" onclick="Engine(5, this.value)"><font color="#FF0000">b.
+          </font><font color="#330033">Dragonfly</font>
+          <br><input type="radio" name="5" value="c" onclick="Engine(5, this.value)"><font color="#FF0000">c.
+          </font><font color="#330033">Bee</font>
+          <br><input type="radio" name="5" value="d" onclick="Engine(5, this.value)"><font color="#FF0000">c.
+          </font><font color="#330033">Ant</font>
+          <br>&nbsp; <br><br>
+
+          <p>What is the dog sound ?
+            <br><input type="radio" name="6" value="a" onclick="Engine(6, this.value)"><font color="#FF0000">a.
+            </font><font color="#330033">Miaow</font>
+            <br><input type="radio" name="6" value="b" onclick="Engine(6, this.value)"><font color="#FF0000">b.
+            </font><font color="#330033">Huuuh</font>
+            <br><input type="radio" name="6" value="c" onclick="Engine(6, this.value)"><font color="#FF0000">c.
+            </font><font color="#330033">Woof-Woof</font>
+            <br><input type="radio" name="6" value="d" onclick="Engine(6, this.value)"><font color="#FF0000">c.
+            </font><font color="#330033">Breeh</font>
+            <br>&nbsp;
+
+            <p>Which animal's baby is known as a "cygnet" ?
+              <br><input type="radio" name="7" value="a" onclick="Engine(7, this.value)"><font color="#FF0000">a.
+              </font><font color="#330033">Elephant</font>
+              <br><input type="radio" name="7" value="b" onclick="Engine(7, this.value)"><font color="#FF0000">b.
+              </font><font color="#330033">Swan</font>
+              <br><input type="radio" name="7" value="c" onclick="Engine(7, this.value)"><font color="#FF0000">c.
+              </font><font color="#330033">Rabbit</font>
+              <br><input type="radio" name="7" value="d" onclick="Engine(7, this.value)"><font color="#FF0000">c.
+              </font><font color="#330033">Dog</font>
+              <br>&nbsp;
+            
+              <p>Which of these animals doesn't exist ?
+                <br><input type="radio" name="8" value="a" onclick="Engine(8, this.value)"><font color="#FF0000">a.
+                </font><font color="#330033">Black panther</font>
+                <br><input type="radio" name="8" value="b" onclick="Engine(8, this.value)"><font color="#FF0000">b.
+                </font><font color="#330033">Pink dolphin</font>
+                <br><input type="radio" name="8" value="c" onclick="Engine(8, this.value)"><font color="#FF0000">c.
+                </font><font color="#330033">Green mouse</font>
+                <br><input type="radio" name="8" value="d" onclick="Engine(8, this.value)"><font color="#FF0000">c.
+                </font><font color="#330033">White elephant</font>
+                <br>&nbsp;
+
+                <p>Which animal is the oldest on earth ?
+                  <br><input type="radio" name="9" value="a" onclick="Engine(9, this.value)"><font color="#FF0000">a.
+                  </font><font color="#330033">Shell</font>
+                  <br><input type="radio" name="9" value="b" onclick="Engine(9, this.value)"><font color="#FF0000">b.
+                  </font><font color="#330033">Turtle</font>
+                  <br><input type="radio" name="9" value="c" onclick="Engine(9, this.value)"><font color="#FF0000">c.
+                  </font><font color="#330033">Monkey</font>
+                  <br><input type="radio" name="9" value="d" onclick="Engine(9, this.value)"><font color="#FF0000">c.
+                  </font><font color="#330033">Elephant</font>
+                  <br>&nbsp;
+
+                  <p>Where does the lion live ?
+                    <br><input type="radio" name="10" value="a" onclick="Engine(10, this.value)"><font color="#FF0000">a.
+                    </font><font color="#330033">Jungle</font>
+                    <br><input type="radio" name="10" value="b" onclick="Engine(10, this.value)"><font color="#FF0000">b.
+                    </font><font color="#330033">Farm</font>
+                    <br><input type="radio" name="10" value="c" onclick="Engine(10, this.value)"><font color="#FF0000">c.
+                    </font><font color="#330033">Street</font>
+                    <br><input type="radio" name="10" value="d" onclick="Engine(10, this.value)"><font color="#FF0000">c.
+                    </font><font color="#330033">Savannah</font>
+                    <br>&nbsp;
+
+
+
+          <p><input type="button" class="results" name="Results" value="Résults" onclick="NextLevel()">
+            <br>&nbsp;
+            <p></form>
+            </div>
+  <script src="drums.js"></script>
    
 </body>
 </html>
