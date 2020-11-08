@@ -25,17 +25,17 @@ function dragDrop(event) {
 // "event.target:" "<div id='square3' ondrop='dragDrop(event)' ondragover='allowDrop(event)'>square3</div>"
 event.preventDefault();
 // retrieve the data dragged
-let data = event.dataTransfer.getData("text");
-console.log("data: ", data) //data: square1
+let data = event.dataTransfer.getData("text")
+// container.style.marginLeft = "10px";
+ console.log("data: ", data); //data: square1
 let box = document.getElementById(data);
-// container.style.marginLeft = " 10px";
 if(data == 'square'){
     alert('you did it!')
   } else {
-    alert("do another!")
-  } event.target.appendChild(box);  
+    alert("do another!");
+  }event.target.appendChild(box);
+ // container.style.marginLeft = "10px";
 }
-
 
 // if(data == 'circle'){
 //     alert('you did it!');
