@@ -48,7 +48,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 
-	margin-left: 45px;
+	margin-left: 55px;
 	display: grid;
 	grid-template-areas: 
 	"trapezoid1 rectangle1 circle1 square1";
@@ -111,8 +111,8 @@ body{
 
 
 #square1{
-	height: 80px;
-	width: 80px;
+	height: 90px;
+	width: 90px;
 	background-color: white;
 	border-style: dashed;
 
